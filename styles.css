@@ -171,3 +171,7 @@ body {
 .form_ready{
     display: none;
 }
+
+.all_set{
+    align-self: center;
+}
