@@ -32,22 +32,35 @@
             <div class="form-group-row">
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email">
+                    <input type="email" id="email" placeholder="Email" onchange="mail_tester()">
                 </div>
+                <img width=25px src="../correct.png" alt="CheckMark" class="mail_ready">
+
+            </div>
+            <div class="errors">
+                <span class="text-danger mail_error"> Error : Please follow right email format 
+                    <img width=25px src="../traverser.png" alt="error" class="mail_error">
+                </span>
             </div>
             <div class="form-group-row">
                 <div class="form-group">
                     <label for="password">Password</label>
                     <div class="password-container">
-                        <input type="password" id="psw" placeholder="Password">
+                        <input type="password" id="psw" placeholder="Password" onchange="psw_tester()">
                         <div class="barrier"></div>
                         <img src="./eye.png" alt="eye" id="togglePassword" class="eye-icon">
+                        <img width=25px src="../correct.png" alt="CheckMark" class="psw_ready">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="Generate">&nbsp;</label>
                     <button id="generate-btn" class="generate-btn" type="button">Generate Password</button>
                 </div>
+            </div>
+            <div class="errors">
+                <span class="text-danger psw_error">Error : Please follow right password format
+                    <img width=25px src="../traverser.png" alt="error" class="psw_error">
+                </span>
             </div>
             <div class="form-group-row">
                 <div class="form-group">
@@ -70,7 +83,9 @@
                 </div>
             </div>
             <div class="form-group">
-                <p id="password"></p>
+                <br>
+                <span class="text-success form_ready">LET's GDG Together !</span> <img width="25px" src="../correct.png" alt="CheckMark" class="form_ready">
+                <br>
                 <button type="submit" class="submit-btn">Submit</button>
             </div>
         </form>
