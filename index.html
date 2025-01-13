@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG Membership</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<script src="./js.js"></script>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <img src="GDG.png" alt="GDG Image" class="header-image" width="350px">
+            <div class="header-text">
+                <h1>GDG MemberShip Form</h1>
+                <p>Welcome to GDG Emsi hihihi</p>
+            </div>
+        </div>
+        <form class="form-body">
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="first-name">Name</label>
+                    <input type="text" id="f_name" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">&nbsp;</label>
+                    <input type="text" id="l_name" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="psw" placeholder="Password">
+                        <div class="barrier"></div>
+                        <img src="./eye.png" alt="eye" id="togglePassword" class="eye-icon">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Generate">&nbsp;</label>
+                    <button id="generate-btn" class="generate-btn" type="button">Generate Password</button>
+                </div>
+            </div>
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="first-name">Confirm Password</label>
+                    <input type="password" id="cnf_psw" placeholder="Confirm Password">
+                </div>
+            </div>
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> makaynch other gha dahkin</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" placeholder="MM-DD-YYYY">
+                </div>
+            </div>
+            <div class="form-group">
+                <p id="password"></p>
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

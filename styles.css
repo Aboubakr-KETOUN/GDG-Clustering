@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Password container with flex */
+.password-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Password input */
+.password-container input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Barrier between input and icon */
+.password-container .barrier {
+    width: 1px;
+    height: 50%;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+/* Eye icon */
+.password-container .eye-icon {
+    cursor: pointer;
+    width: 25px; /* Adjust size */
+    height: 25px;
+    margin-right: 10px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.form-header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 30px;
+}
+
+.header-image {
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.header-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    align-items: flex-end;
+}
+
+.header-text p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Form Body */
+.form-body {
+    padding: 20px;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="email"],
+.form-group input[type="password"]{
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    font-size: 14px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: rgba(24,189,91);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.generate-btn {
+    align-self: center;
+    width: 50%;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
