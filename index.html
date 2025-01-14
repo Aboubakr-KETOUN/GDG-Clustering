@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GDG Membership</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<script src="./js.js"></script>
+<script src="./assets/js/js.js"></script>
 <body>
     <div class="form-container">
         <div class="form-header">
@@ -34,12 +34,12 @@
                     <label for="email">Email</label>
                     <input type="email" id="email" placeholder="Email" onchange="mail_tester()">
                 </div>
-                <img width=25px src="../correct.png" alt="CheckMark" class="mail_ready">
+                <img width=25px src="./images/correct.png" alt="CheckMark" class="mail_ready">
 
             </div>
             <div class="errors">
                 <span class="text-danger mail_error"> Error : Please follow right email format 
-                    <img width=25px src="../traverser.png" alt="error" class="mail_error">
+                    <img width=25px src="./images/traverser.png" alt="error" class="mail_error">
                 </span>
             </div>
             <div class="form-group-row">
@@ -49,7 +49,7 @@
                         <input type="password" id="psw" placeholder="Password" onchange="psw_tester()">
                         <div class="barrier"></div>
                         <img src="./eye.png" alt="eye" id="togglePassword" class="eye-icon">
-                        <img width=25px src="../correct.png" alt="CheckMark" class="psw_ready">
+                        <img width=25px src="./images/correct.png" alt="CheckMark" class="psw_ready">
                     </div>
                 </div>
                 <div class="form-group">
@@ -59,7 +59,7 @@
             </div>
             <div class="errors">
                 <span class="text-danger psw_error">Error : Please follow right password format
-                    <img width=25px src="../traverser.png" alt="error" class="psw_error">
+                    <img width=25px src="./images/traverser.png" alt="error" class="psw_error">
                 </span>
             </div>
             <div class="form-group-row">
@@ -84,7 +84,7 @@
             </div>
             <div class="form-group">
                 <div class="all_set">
-                <span class="text-success form_ready">LET's GDG Together !</span> <img width="25px" src="../correct.png" alt="CheckMark" class="form_ready">
+                <span class="text-success form_ready">LET's GDG Together !</span> <img width="25px" src="./images/correct.png" alt="CheckMark" class="form_ready">
                 </div>
                 <button type="submit" class="submit-btn">Submit</button>
             </div>
