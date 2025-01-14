@@ -22,20 +22,37 @@
             <div class="form-group-row">
                 <div class="form-group">
                     <label for="first-name">Name</label>
-                    <input type="text" id="f_name" placeholder="First Name">
+                    <div class="names">
+                        <input type="text" id="f_name" placeholder="First Name" onchange="f_name_checker()">
+                        <img width=25px src="./assets/images/correct.png" alt="CheckMark" class="first-name-ready">
+                    </div>
+                    <div class="errors">
+                        <span class="text-danger first-name-error"> Error : Name cannot be empty
+                            <img width=25px src="./assets/images/traverser.png" alt="error" class="first-name-error">
+                        </span>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="last-name">&nbsp;</label>
-                    <input type="text" id="l_name" placeholder="Last Name">
+                    <div class="names">
+                        <input type="text" id="l_name" placeholder="Last Name" onchange="l_name_checker()">
+                        <img width=25px src="./assets/images/correct.png" alt="CheckMark" class="last-name-ready">
+                    </div>
+                    <div class="errors">
+                        <span class="text-danger last-name-error"> Error : Last Name cannot be empty
+                            <img width=25px src="./assets/images/traverser.png" alt="error" class="last-name-error">
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="form-group-row">
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email" onchange="mail_tester()">
+                    <div>
+                        <input type="email" id="email" placeholder="Email" onchange="mail_tester()">
+                        <img width=25px src="./assets/images/correct.png" alt="CheckMark" class="mail_ready">
+                    </div>
                 </div>
-                <img width=25px src="./assets/images/correct.png" alt="CheckMark" class="mail_ready">
-
             </div>
             <div class="errors">
                 <span class="text-danger mail_error"> Error : Please follow right email format 
@@ -46,7 +63,7 @@
                 <div class="form-group">
                     <label for="password">Password</label>
                     <div class="password-container">
-                        <input type="password" id="psw" placeholder="Password" onchange="psw_tester()">
+                        <input type="text" id="psw" placeholder="Password" onchange="psw_tester()">
                         <div class="barrier"></div>
                         <img src="./assets/images/eye.png" alt="eye" id="togglePassword" class="eye-icon">
                         <img width=25px src="./assets/images/correct.png" alt="CheckMark" class="psw_ready">
@@ -63,18 +80,26 @@
                 </span>
             </div>
             <div class="form-group-row">
-                <div class="form-group">
+                <div class="form-group confirmation">
                     <label for="first-name">Confirm Password</label>
-                    <input type="password" id="cnf_psw" placeholder="Confirm Password">
+                    <div>
+                        <input type="password" id="cnf_psw" placeholder="Confirm Password" onchange="psw_confirmer()">
+                        <img width=25px src="./assets/images/correct.png" alt="CheckMark" class="psw_confirm_ready">
+                    </div>
                 </div>
+            </div>
+            <div class="errors">
+                <span class="text-danger psw_confirm_error">Error : Passwords do not match
+                    <img width=25px src="./assets/images/traverser.png" alt="error" class="psw_confirm_error">
+                </span>
             </div>
             <div class="form-group-row">
                 <div class="form-group">
                     <label for="gender">Gender</label>
                     <div class="radio-group">
-                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="male" checked> Male</label>
                         <label><input type="radio" name="gender" value="female"> Female</label>
-                        <label><input type="radio" name="gender" value="other"> makaynch other gha dahkin</label>
+                        <label><input type="radio" name="gender" value="other"> Makaynch other gha dahkin</label>
                     </div>
                 </div>
                 <div class="form-group">
@@ -86,7 +111,7 @@
                 <div class="all_set">
                 <span class="text-success form_ready">LET's GDG Together !</span> <img width="25px" src="./assets/images/correct.png" alt="CheckMark" class="form_ready">
                 </div>
-                <button type="submit" class="submit-btn">Submit</button>
+                <button id="submit-btn" type="submit" class="submit-btn" disabled="disabled">Submit</button>
             </div>
         </form>
     </div>
