@@ -3,7 +3,7 @@ $(document).ready(function () {
         let input = $("#psw");
         let isPassword = input.attr("type") === "password";
         input.attr("type", isPassword ? "text" : "password");
-        $(this).attr("src", isPassword ? "./eye_hide.png" : "./eye.png");
+        $(this).attr("src", isPassword ? "./assets/images/eye_hide.png" : "./assets/images/eye.png");
     });
 });
 
